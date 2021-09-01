@@ -15,12 +15,6 @@
   src: local('Gotham Pro'), url(../fonts/GothamPro.ttf) format('opentype');
 }
 
-body {
-  font-family: Verdana, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
 p,
 ul,
 ol,

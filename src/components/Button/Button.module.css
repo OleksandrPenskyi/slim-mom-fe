@@ -1,0 +1,41 @@
+@value primary-bg-color from '../../styles/variables.module.css';
+@value secondary-bg-color from '../../styles/variables.module.css';
+@value primary-btn-color from '../../styles/variables.module.css';
+@value secondary-btn-color from '../../styles/variables.module.css';
+@value primary-font from '../../styles/variables.module.css';
+
+.Btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 176px;
+  height: 44px;
+  border-radius: 30px;
+
+  font-family: primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: transform 250ms ease-in;
+}
+
+.Btn:hover {
+  transform: scale(1.03);
+}
+
+.Active {
+  border: none;
+  color: primary-btn-color;
+  background-color: primary-bg-color;
+  box-shadow: 0px 4px 10px rgba(252, 132, 45, 0.5);
+}
+
+.NotActive {
+  color: secondary-btn-color;
+  background-color: secondary-bg-color;
+  border: 2px solid secondary-btn-color;
+}

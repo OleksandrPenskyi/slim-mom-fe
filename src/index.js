@@ -9,8 +9,6 @@ import store from './redux/store';
 import 'modern-normalize/modern-normalize.css';
 import './styles/styles.css';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -19,5 +17,5 @@ ReactDOM.render(
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

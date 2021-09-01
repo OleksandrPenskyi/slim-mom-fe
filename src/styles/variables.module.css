@@ -10,9 +10,10 @@
 @value secondary-bg-color: #FFFFFF;
 
 @value primary-btn-color: #FFFFFF;
-@value secondary-btn-color: #FC842DF;
+@value secondary-btn-color: #FC842D;
 
 /* fonts */
+@value primary-font: Verdana, sans-serif;
 @value secondary-font: GothamPro, sans serif;
 
 /* 

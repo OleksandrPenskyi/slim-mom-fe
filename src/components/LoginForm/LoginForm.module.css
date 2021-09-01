@@ -1,0 +1,62 @@
+@value primary-text-color from '../../styles/variables.module.css';
+@value primary-font from '../../styles/variables.module.css';
+@value secondary-btn-color from '../../styles/variables.module.css';
+@value secondary-title-color from '../../styles/variables.module.css';
+
+.Wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Wrapper:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+.Label {
+  position: absolute;
+  left: 0;
+  top: -7px;
+
+  font-family: primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: primary-text-color;
+
+  transition: all 250ms ease-in;
+}
+
+.Input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+
+  font-family: primary-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: primary-text-color;
+
+  transition: all 250ms ease-in;
+}
+
+.Input:focus,
+.Input:not(:placeholder-shown) {
+  outline: none;
+  border-bottom: 1px solid secondary-btn-color;
+}
+
+.Input:focus + .Label,
+.Input:not(:placeholder-shown) + .Label {
+  color: secondary-title-color;
+  left: 15px;
+  top: -15px;
+}
