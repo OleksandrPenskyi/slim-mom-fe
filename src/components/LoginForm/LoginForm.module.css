@@ -3,23 +3,37 @@
 @value secondary-btn-color from '../../styles/variables.module.css';
 @value secondary-title-color from '../../styles/variables.module.css';
 
-.Wrapper {
-  position: relative;
-
+.FormWrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+
+  width: 290px;
+  padding-top: 5px;
 }
 
-.Wrapper:not(:last-child) {
-  padding-bottom: 50px;
+.Form {
+  width: 100%;
+
+  margin-bottom: 60px;
+}
+
+.Wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.TheLastOne {
+  margin-bottom: 0;
 }
 
 .Label {
   position: absolute;
   left: 0;
   top: -7px;
+  width: 100%;
 
   font-family: primary-font;
   font-weight: 700;
@@ -32,6 +46,8 @@
 }
 
 .Input {
+  width: 100%;
+
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -59,4 +75,14 @@
   color: secondary-title-color;
   left: 15px;
   top: -15px;
+}
+
+.BtnWrapper {
+  /* margin-bottom: 20px; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
