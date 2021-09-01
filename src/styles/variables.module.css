@@ -1,4 +1,19 @@
-@value primary-color: #ffffff;
+/* colors */
+@value primary-title-color: #212121;
+@value secondary-title-color: #FC842D;
+@value numbers-title-color: #264061;
+
+@value primary-text-color: #9B9FAA;
+@value secondary-text-color: #212121;
+
+@value primary-bg-color: #FC842D;
+@value secondary-bg-color: #FFFFFF;
+
+@value primary-btn-color: #FFFFFF;
+@value secondary-btn-color: #FC842DF;
+
+/* fonts */
+@value secondary-font: GothamPro, sans serif;
 
 /* 
 
